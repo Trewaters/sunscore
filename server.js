@@ -9,7 +9,7 @@ var meetupEvent = mongoose.model('dataSet1'); // mongoose
 var googleEvent = mongoose.model('dataSet2'); // mongoose
 
 //mongoose.connect('mongodb://localhost/sunscore'); // mongoose
-mongoose.connect("mongodb://sunscore:SUNSCORE@ds011369.mlab.com:11369/sunscoredb"); // connection string for Mlab
+//mongoose.connect("mongodb://sunscore:SUNSCORE@ds011369.mlab.com:11369/sunscoredb"); // connection string for Mlab
 
 // [NOTE] use fs for writing logs to file
 // var fs = require('fs'); // morgan
