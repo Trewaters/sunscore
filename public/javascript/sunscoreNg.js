@@ -2,16 +2,19 @@ var app = angular.module('sunscoreNgApp', ['ngRoute','ngResource'])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'index.html'
-                , controller: 'mainController'
+                templateUrl: 'inputForm.html'
+                , controller: 'inputController'
             })
-            .when('/chart', {
-                templateUrl: 'chart.html'
-                , controller: 'graphController'
-            })
+            /*
             .when('/inputForm', {
                 templateUrl: 'inputForm.html'
                 , controller: 'inputController'
+            })
+            */
+            
+            .when('/chart', {
+                templateUrl: 'chart.html'
+                , controller: 'graphController'
             })
     })
     .run(function ($rootScope){
