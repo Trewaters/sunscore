@@ -1,0 +1,34 @@
+{
+  "name": "sunscore",
+  "version": "0.1.0",
+  "description": "A credit metric score for community solar subscribers to facilitate project financing.",
+  "keywords": [
+    "sunscore",
+    "solar",
+    "score",
+    "hackathon"
+  ],
+  "homepage": "http://www.sunscore.com",
+  "license": "GPL-3.0",
+  "author": {
+    "name": "sunscore corp",
+    "email": "trewaters@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Trewaters/sunscore.git"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "moment": "^2.13.0",
+    "mongoose": "^4.4.17",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,14 @@
+  <div ng-controller="graphController as graph">
+
+    <div class="graph" style="width:{{width}}px; height:{{height}}px;" >
+
+      <!-- Labels -->
+      <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
+      <div class="x">{{xAxis}}</div>
+      
+      <!-- Data -->
+      <div ng-repeat="bar in data" class="bar" style="height:{{bar.value / max * height}}px; width:{{width / data.length - 5}}px; left:{{$index / data.length * width}}px;"></div>
+
+    </div>
+
+  </div
