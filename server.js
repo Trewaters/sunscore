@@ -94,7 +94,7 @@ app.get('/auth/meetup/callback',
 
 var server = app.listen({
     host: 'localhost',
-    port: 3000
+    port: process.env.PORT || 3000
 }, function () {
     var vPort = server.address().port;
     var vHost = server.address().address;
