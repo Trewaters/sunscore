@@ -69,3 +69,29 @@ solution
 ====
 https://utilityapi.com/api/bills.json?access_token=opendatatoken&services=5350
 
+===
+Utility links
+===
+Landsat Aerial Data/Maps ( https://aws.amazon.com/blogs/aws/start-using-landsat-on-aws/ )
+
+Enphase - performance data for a PV system ( https://developer.enphase.com/docs/ )
+
+Genability API - Tariff data ( http://developer.genability.com/ )
+
+Solar Dataset ( https://energydemo.github.io/SolarDatasets/ )
+
+NREL OpenPV - real time status ( https://developer.nrel.gov/docs/solar/openpv/ )
+
+NREL - developer network for all data ( https://developer.nrel.gov/ )
+
+NREL - System Advisor Model ( https://sam.nrel.gov/node/69515 )
+
+Open EI - Utility rates data ( http://en.openei.org/wiki/Utility_Rate_Database )
+
+Open EI - Incentives and policies ( http://en.openei.org/wiki/Gateway:Incentives_and_Policies )
+
+Open EI - GET incentives documentation ( http://en.openei.org/services/doc/rest/incentives/ )
+
+Utility API - download utility bill ( https://utilityapi.com/ )
+
+Utility API - documentation ( https://utilityapi.com/docs )
