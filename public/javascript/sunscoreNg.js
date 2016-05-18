@@ -1,23 +1,19 @@
-var app = angular.module('sunscoreNgApp', ['ngRoute','ngResource'])
+var app = angular.module('sunscoreNgApp', ['ngRoute', 'ngResource'])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'inputForm.html'
-                , controller: 'inputController'
+                controller: 'mainController'
             })
-            /*
             .when('/inputForm', {
                 templateUrl: 'inputForm.html'
                 , controller: 'inputController'
             })
-            */
-            
             .when('/chart', {
                 templateUrl: 'chart.html'
                 , controller: 'graphController'
             })
     })
-    .run(function ($rootScope){
+    .run(function ($rootScope) {
         $rootScope.sunscore = 0;
     })
     ;
@@ -25,9 +21,9 @@ app.controller('mainController', function ($scope) {
 
 });
 
-app.controller('inputController', function ($scope,$rootScope) {
-    
-    
+app.controller('inputController', function ($scope, $rootScope) {
+
+
     var factor50Name; // string
     var factor50ServiceAddr; // string
     var factor50PayHis; // number
@@ -38,67 +34,67 @@ app.controller('inputController', function ($scope,$rootScope) {
     var factor25Emp; // number
     var factor25Public; // number
     var factor25Resi; // number
-    
-    createScore() = function(){
-        
+
+    createScore() = function () {
+
     };
-    
+
     factor50Name = $scope.inputName;
     factor50ServiceAddr = $scope.inputServiceAddr;
-    
-    
+
+
     // Total value is 20 points
     // factor50PayHis
-    if ($scope.inputName == 'Good Sunscore'){
-            // value is 1 point
-            $rootScope.sunscore += 20;
-            
-            $scope.inputInc = 3;
-        };
-        if ($scope.inputName == 'Alright Sunscore'){
-            // value is 1 point
-            $rootScope.sunscore += 10;
-            $scope.inputInc = 2;
-        };
-        if ($scope.inputName == 'Ugly Sunscore'){
-            // value is 1 point
-            $rootScope.sunscore += 0;
-            $scope.inputInc = 1;
-        };
-    
+    if ($scope.inputName == 'Good Sunscore') {
+        // value is 1 point
+        $rootScope.sunscore += 20;
+
+        $scope.inputInc = 3;
+    };
+    if ($scope.inputName == 'Alright Sunscore') {
+        // value is 1 point
+        $rootScope.sunscore += 10;
+        $scope.inputInc = 2;
+    };
+    if ($scope.inputName == 'Ugly Sunscore') {
+        // value is 1 point
+        $rootScope.sunscore += 0;
+        $scope.inputInc = 1;
+    };
+
     // Total value is 2.5 points
     // factor25Adults
-    if($scope.inputAdults > 0){
-            // value is 1 point
-            $rootScope.sunscore += 1;
-            
-            if ($scope.inputDep > 0){
-                // value is 2.5 points
-                $rootScope.sunscore += 1.5;
-            };
-            
+    if ($scope.inputAdults > 0) {
+        // value is 1 point
+        $rootScope.sunscore += 1;
+
+        if ($scope.inputDep > 0) {
+            // value is 2.5 points
+            $rootScope.sunscore += 1.5;
         };
-    
+
+    };
+
     // Total value is 2.5 points
     // factor25Emp
-    if($scope.inputEmp == 3){$rootScope.sunscore += 2.5;};
-        if($scope.inputEmp == 2){$rootScope.sunscore += 1.5;};
-        if($scope.inputEmp == 1){$rootScope.sunscore += 0;};
-    
+    if ($scope.inputEmp == 3) { $rootScope.sunscore += 2.5; };
+    if ($scope.inputEmp == 2) { $rootScope.sunscore += 1.5; };
+    if ($scope.inputEmp == 1) { $rootScope.sunscore += 0; };
+
     // Total value is 2.5 points
     // factor25Public
-    if($scope.inputPublic < 5){$rootScope.sunscore += 1.5;};
-        if($scope.inputPublic == 5){$rootScope.sunscore += 2.5;};
-        if($scope.inputPublic == 6){$rootScope.sunscore += 0;};
-    
+    if ($scope.inputPublic < 5) { $rootScope.sunscore += 1.5; };
+    if ($scope.inputPublic == 5) { $rootScope.sunscore += 2.5; };
+    if ($scope.inputPublic == 6) { $rootScope.sunscore += 0; };
+
     // Total value is 2.5 points
     // factor25Resi
-    if($scope.inputResi < 3){$rootScope.sunscore += 2.5;};
-        if($scope.inputResi == 3){$rootScope.sunscore += 1.5;};
-        if($scope.inputResi == 4){$rootScope.sunscore += 0;};
-    
+    if ($scope.inputResi < 3) { $rootScope.sunscore += 2.5; };
+    if ($scope.inputResi == 3) { $rootScope.sunscore += 1.5; };
+    if ($scope.inputResi == 4) { $rootScope.sunscore += 0; };
+
     return $rootScope.sunscore;
-    
+
 });
 
 app.controller('graphController', function ($scope) {

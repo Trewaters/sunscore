@@ -1,8 +1,8 @@
 - Sliders to represent data
 
 
-=======
-=======
+===
+=
 MLab information
 ---
 
@@ -18,23 +18,24 @@ To connect using a driver via the standard MongoDB URI (what's this?):
  
  https://github.com/Trewaters/sunscore.git
  
-=======
+===
 Resources
-=======
+=
 http://builtwith.com/myneoloan.com
 
 https://css-tricks.com/using-angularjs-for-data-visualisations/
 
-=======
+Bootstrap dashboard theme ( https://github.com/BlackrockDigital/startbootstrap-sb-admin ), found at this www ( http://startbootstrap.com/template-categories/full-websites/ )
+
+===
 Mentor contact info
-=======
+=
 Bosco So
 ---
 @BoscoMonkey
 
 Danny
 ---
-
 
 Chris Cholette
 ---
@@ -45,8 +46,8 @@ Sloane Morgan
 Frederic Dross
 ---
 
-=======
-=======
+===
+=
 DevPost items for submission:
 
 - video
@@ -54,8 +55,8 @@ DevPost items for submission:
 - tagline
 - description
 
-=======
-=======
+===
+=
 Pitch
 
 state problem
@@ -65,13 +66,13 @@ solution
 - We have a Fico substitute
 
 - show how to use the tool to break out of FICO score restrictions
+
 ===
-====
 https://utilityapi.com/api/bills.json?access_token=opendatatoken&services=5350
 
 ===
 Utility links
-===
+=
 Landsat Aerial Data/Maps ( https://aws.amazon.com/blogs/aws/start-using-landsat-on-aws/ )
 
 Enphase - performance data for a PV system ( https://developer.enphase.com/docs/ )
