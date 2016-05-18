@@ -12,6 +12,10 @@ var app = angular.module('sunscoreNgApp', ['ngRoute', 'ngResource'])
                 templateUrl: 'chart.html'
                 , controller: 'graphController'
             })
+            .when('/REMOVELATER',{ // This is all the elements I have pulled out of the other pages.
+                templateUrl: 'index2nd.html'
+                , controller: 'mainController' // temp controller. I don't plan on having this use a controller
+            })
     })
     .run(function ($rootScope) {
         $rootScope.sunscore = 0;

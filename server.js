@@ -29,12 +29,6 @@ var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a
 app.use(morgan('common', {stream: accessLogStream})); // morgan
 */
 
-/*
-app.get('/', function (req, res) {
-    res.sendFile('/public/index.html');
-}); // express
-*/
-
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
 //app.set('view engine', 'jade');
