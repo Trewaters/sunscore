@@ -2,17 +2,34 @@ var app = angular.module('sunscoreNgApp', ['ngRoute', 'ngResource'])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
-                controller: 'mainController'
+                templateUrl: 'welcome.html'
+                , controller: 'mainController'
             })
             .when('/inputForm', {
                 templateUrl: 'inputForm.html'
                 , controller: 'inputController'
             })
             .when('/chart', {
-                templateUrl: 'chart.html'
+                templateUrl: 'charts.html'
                 , controller: 'graphController'
             })
-            .when('/REMOVELATER',{ // This is all the elements I have pulled out of the other pages.
+            .when('/tables',{
+               templateUrl: 'tables.html'
+               , controller: 'mainController'
+            })
+            .when('/forms', {
+                templateUrl:'forms.html'
+                , controller:'mainController'
+            })
+            .when('/bootstrap-elements',{
+              templateUrl:'bootstrap-elements.html'
+              , controller:'mainController'  
+            })
+            .when('/bootstrap-grid',{
+                templateUrl:'bootstrap-grid.html'
+                , controller:'mainController'
+            })
+            .when('/REMOVELATER',{ // This has all the elements I have pulled out of the other pages.
                 templateUrl: 'index2nd.html'
                 , controller: 'mainController' // temp controller. I don't plan on having this use a controller
             })
