@@ -93,10 +93,18 @@ Open EI - Incentives and policies ( http://en.openei.org/wiki/Gateway:Incentives
 
 Open EI - GET incentives documentation ( http://en.openei.org/services/doc/rest/incentives/ )
 
-Utility API - download utility bill ( https://utilityapi.com/ )
+===
+Utility API
+=
+- download utility bill ( https://utilityapi.com/ )
 
-Utility API - documentation ( https://utilityapi.com/docs )
+- documentation ( https://utilityapi.com/docs )
 
+- Tokens
+    - API Token is "access_token=21fd9538db5e49228bd81ed84f1a00b6"
+    - Widget is "/portal/trewaters_hotmail", or "https://utilityapi.com/form-builder/99bb111c"
+
+- https://utilityapi.com/api ...
 
 
 

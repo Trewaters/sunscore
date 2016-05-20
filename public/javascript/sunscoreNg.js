@@ -42,7 +42,23 @@ app.controller('mainController', function ($scope) {
 
 });
 
-app.controller('inputController', function ($scope, $rootScope) {
+app.controller('inputController', function ($scope, $rootScope, $http) {
+
+$scope.createScore = function(){
+    
+    // [TO DO] - move the access_token information to the server side. We don't want that in the open.
+    // call to add user account
+    $http({method: 'GET', url:'https://utilityapi.com/api/accounts/add.json?access_token=21fd9538db5e49228bd81ed84f1a00b6'}).then(function successCallback(response){
+        
+        $scope.uApiAccount = response;
+        // walk through this data to help display a form of required information the user must provide to access their data.
+        
+    }, function errorCallback(response){
+       
+       console.log(response);
+       
+    });
+};
 
 
     var factor50Name; // string
